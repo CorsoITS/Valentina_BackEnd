@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors')
 const { json, urlencoded } = require('body-parser');
-const { routerAuth } = require('./rotte/auth');
+const { routerAuth } = require('./routes/auth');
 const controllaAutenticazione = require('./middlewares/check-auth');
 const { getUtenteById } = require('./model/dao/utente.dao');
 const app = express()
